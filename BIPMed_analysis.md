@@ -5,7 +5,7 @@ Date: September 25th, 2019
 
 ## Introduction
 
-Here we generate a descriptive statistics from two BIPMed VCF files: one including WES and one including SNP array genotype data, and compare allele frequencies with [1000 Genome dataset](https://doi.org/10.1038/nature15393). BIPMed data were evaluated based on hg19 genome built. We changed directory and file names to maintain privacy. Commands are performed by `R software v3.6.3` and `PLINK v1.9`.
+Here we generate a descriptive statistics from two BIPMed VCF files: one including WES and one including SNP array genotype data, and compare allele frequencies with [1000 Genome dataset](https://doi.org/10.1038/nature15393). BIPMed data were evaluated based on hg19 genome built. We changed directory and file names to maintain privacy. Commands are performed by `R software v3.6.3` and `PLINK v1.9`. The comparison was based on the [1000 Genomes Project phase 3](ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/), GRCh37/hg19 assembly.
 
 ## Analysis
 
