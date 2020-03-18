@@ -1,6 +1,6 @@
 # BIPMed data analysis
 
-author: "Rodrigo Secolin"
+author: Rodrigo Secolin  
 date: September 25th, 2019
 
 ## Introduction
