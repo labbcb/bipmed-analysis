@@ -1,11 +1,11 @@
 # BIPMed data analysis
 
-author: Rodrigo Secolin  
-date: September 25th, 2019
+Author: Rodrigo Secolin  
+Date: September 25th, 2019
 
 ## Introduction
 
-Here we generate a descriptive statistics from two BIPMed VCF files: one including WES and one including SNP array genotype data, and compare allele frequencies with 1000 Genome dataset (doi:10.1038/nature15393). BIPMed data were evaluated based on hg19 genome built. We changed directory and file names to maintain privacy. Commands are performed by `R software v3.6.3` and `PLINK v1.9`.
+Here we generate a descriptive statistics from two BIPMed VCF files: one including WES and one including SNP array genotype data, and compare allele frequencies with [1000 Genome dataset](https://doi.org/10.1038/nature15393). BIPMed data were evaluated based on hg19 genome built. We changed directory and file names to maintain privacy. Commands are performed by `R software v3.6.3` and `PLINK v1.9`.
 
 ## Analysis
 
@@ -17,7 +17,7 @@ library(ggplot2)
 
 ### Merging SNP array and WES datasets
 
-Remove samples from WES data according heterogeneity, IBS, and relatedness parameters from Secolin et al., 2019 (doi:10.1038/s41598-019-50362-2), and convert in PLINK format.
+Remove samples from WES data according heterogeneity, IBS, and relatedness parameters from [Secolin et al., 2019](https://doi.org/10.1038/s41598-019-50362-2), and convert in PLINK format.
 ```r
 system('plink --vcf wes.vcf.gz --make-bed --out wes_release --double-id --biallelic-only strict --remove remove_sample_ids.txt')
 # change population definition
@@ -191,4 +191,3 @@ loaded via a namespace (and not attached):
 [25] evaluate_0.14    rmarkdown_1.16   stringi_1.4.3    compiler_3.6.3  
 [29] pillar_1.4.2     scales_1.0.0     pkgconfig_2.0.3
 ```
-
